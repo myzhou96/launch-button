@@ -24,6 +24,9 @@ class WindowController: NSWindowController {
         openIntelliJ()
     }
     
+    @IBAction func terminalBtnPressed(_ sender: Any) {
+        openTerminal()
+    }
     func openSlack() {
         NSWorkspace.shared().open(URL(fileURLWithPath: "/Applications/Slack.app"))
     }
